@@ -25,13 +25,8 @@ def factorial(n):
 
 
 def triangular(n):
-
-    result = 1
-    for i in range(2, n+1):
-        result += i
-    return result
     '''
-    Returns the nth triangular number
+    Returns the nth triangular number.
 
     The nth triangular number is the sum of all numbers from 1 to n.
     It is like the factorial, but uses addition instead of multiplication.
@@ -49,3 +44,8 @@ def triangular(n):
     >>> triangular(400)
     80200
     '''
+
+    result = 1 
+    for i in range(2, n+1):
+        result += i
+    return result
